@@ -1,0 +1,77 @@
+F.A.Q.
+
+Q: I deleted any addon package, and getting compiler errors after deleting them.
+A: Addon packages are using scripting symbols. For ex, BCG Shared Asset is using "BCG_EnterExit", PUN2 is using "RCC_Photon", Logitech is using "RCC_LOGI" etc. You must remove the corresponding scripting symbol in your build settings. Go to your Build Settings and click Player Settings. Scroll down to Other Settings section. 
+
+Q: My vehicle is moving backwards, and wheels are operating at wrong angle.
+A: Be sure your models have proper pivot and axle directions. If Z axis is facing backwards, your vehicle will move backwards.
+
+Q: My lights are not visible.
+A: RCC Lights are working as vertex lights to avoid performance loss by default. You can change this option from RCC Settings (Tools --> BCG --> RCC --> Edit Settings --> Optimization --> "Use lights as vertex light"). Simply, disable this option.
+
+Q: I imported PUN2 / PUN1 integration, but having compiler errors.
+A: Be sure you have imported PUN2 / PUN1 before integration files. Integration files are bridge scripts between PUN and RCC.
+
+Q: Can I use RCC with over +4 wheeled vehicles?
+A: You can use any land vehicle up to 20 wheels. You can assign your additional wheels from "Wheels" tab of the RCC_CarControllerV3 component.
+
+Q: How can I change behavior type?
+A: There is lot of options in RCC Settings (Tools --> BCG --> RCC --> Edit Settings). You can change your behavior on air by using RCC API (Explained in RCC API documentation).
+
+Q: Does RCC supports URP?
+A: Yes, without lensflares. Default lensflares only work with scene camera. You can use ProFlares asset package to use lensflares with URP. RCC has integration scripts to work with ProFlares.
+
+Q: How can I change sensitivity / gyro sensitivity of mobile controllers?
+A: RCC Settings (Tools --> BCG --> RCC --> Edit Settings --> Controller).
+
+Q: How can I change sensitivity of keyboard / Xbox / PS4 controllers?
+A: RCC uses legacy Unity's InputManager. You can directly edit any inputs from your project settings (Edit --> Project Settings --> Input)
+
+Q: I plugged my PS4 / Xbox controller, but inputs are not proper.
+A: Be sure you have imported "Xbox & PS4 InputManager" into your project settings folder. It's located in "Addon Packages" folder.
+
+Q: I plugged my Logitech Steering wheel, but inputs are not proper.
+A: Be sure you have imported "Logitech Integration" into your project settings folder. It's located in "Addon Packages".
+
+Q: My vehicle keeps falling through the ground, or flies away.
+A: Be sure your vehicle model has proper colliders for body, doors, hood, etc... If your vehicle model has not any collider, or wrong shaped/sized collider, this will happen. If your designer doesn't provide you a collider shape, or your model is not including collider shape, you can add "Mesh Collider" to your main body with convex enabled.
+
+Q: My vehicle can't shift gear up/down at proper RPMs.
+A: You can adjust gear up/down target RPM from RCC_CarControllerV3 component attached to your vehicle (under configuration tab).
+
+Q: My vehicle shifts gear up/down so quickly and engine RPM is raising too much at lower speeds.
+A: If your vehicle has bigger wheels, stronger gear ratios, and stronger final driver ratio, this will happen. Higher ratios = slower speed, strongest torque. Lower ratios = higher speed, weakest torque.
+
+Q: I can't attach/detach trailer attached to my truck.
+A: Be sure your trailer and your truck has trailer attacher points. They are just triggers actually. You can find them in demo trailer and demo truck prefabs. If they triggers each other, attachment will be engaged. Each trailer and each truck have specific trailer attached points.
+
+Q: Q. My vehicle is too unstable!
+A: Might be wrongly placed COM. Do not use wrong shaped colliders. Do not use overlapped colliders. Use driving assistances.
+
+Q: My vehicle is moving backwards!
+A: Your vehicle model has wrong axes. Z must be looking at forward.
+
+Q: My vehicle wheels or wheelcolliders are facing to wrong direction!
+A: Be sure your wheel models x, y, z and pivot positions are correct
+
+Q: Why I can’t drift like in your video?
+A: Many things. First of all, COM. Your center of mass must be at correct position. Drifting is related with gizmos and check your wheel forces while car stands. Should be %55 front, %45 rear. Check out your collider shape (It is explained above). Apply high engine torque. Be sure you have selected “Drift” behavior from RCC Settings. This will override your vehicle settings. And also RCC_WheelCollider will use Drift() method to change wheelcollider friction curves at runtime.
+
+Q: I’m getting huge performance loss and red exceptions!
+A: Maybe you’ve found a bug. Send me your error immediately, so I can fix it.
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+
+Q: 
+A: 
+

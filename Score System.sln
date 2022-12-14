@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{679594ef-e426-0654-6f1a-6645264f0b3c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Scripts", "Boxophobic.Utils.Scripts.csproj", "{4f5ecdf5-ff4c-e35c-2566-e20e4d6b440f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{6f185a21-9d00-ce40-5410-72ec7a7d2d7b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Editor", "Boxophobic.Utils.Editor.csproj", "{5092682e-7920-97b2-f4cb-4d43d34d6e96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{f955e4ea-1d4d-7296-8bb8-ac54a7235614}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.SkyboxCubemapExtended.Editor", "Boxophobic.SkyboxCubemapExtended.Editor.csproj", "{a9d71afa-33db-210e-e77a-549e0758f0e2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{679594ef-e426-0654-6f1a-6645264f0b3c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679594ef-e426-0654-6f1a-6645264f0b3c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4f5ecdf5-ff4c-e35c-2566-e20e4d6b440f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4f5ecdf5-ff4c-e35c-2566-e20e4d6b440f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6f185a21-9d00-ce40-5410-72ec7a7d2d7b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6f185a21-9d00-ce40-5410-72ec7a7d2d7b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5092682e-7920-97b2-f4cb-4d43d34d6e96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5092682e-7920-97b2-f4cb-4d43d34d6e96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f955e4ea-1d4d-7296-8bb8-ac54a7235614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f955e4ea-1d4d-7296-8bb8-ac54a7235614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a9d71afa-33db-210e-e77a-549e0758f0e2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a9d71afa-33db-210e-e77a-549e0758f0e2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
